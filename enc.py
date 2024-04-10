@@ -23,11 +23,11 @@ def mains(pu=0,pr=0):
 					frame=Frame(root2,height=25,width=500,bg='#FFFFFF')
 					frame.place(x=150,y=170)
 					ff.write(x)
-					label1=Label(root2,text="SUCCESSFULL!!!",bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri (Body)',12,'italic')).place(x=150,y=170)
+					label1=Label(root2,text="Mã hóa thành công",bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri (Body)',12,'italic')).place(x=150,y=170)
 		except :
 			frame=Frame(root2,height=25,width=500,bg='#FFFFFF')
 			frame.place(x=150,y=170)
-			label1=Label(root2,text="ERROR!!!",bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri (Body)',12,'italic')).place(x=150,y=170)
+			label1=Label(root2,text="Mã hóa thất bại",bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri (Body)',12,'italic')).place(x=150,y=170)
 	def gotodo2():
 		link.set('')	
 		link2.set('')

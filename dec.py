@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import ImageTk,Image
 from tkinter import filedialog
-
+import codecs
 def mains(pu=0,pr=0):
 	def button1():
 		a=root2.filename=filedialog.askopenfilename(initialdir='C:/',title='Mở file txt',filetypes=(("txt files","*.txt"),("all files",'*.*')))
@@ -22,11 +22,11 @@ def mains(pu=0,pr=0):
 					frame=Frame(root2,height=25,width=500,bg='#FFFFFF')
 					frame.place(x=150,y=170)
 					ff.write(x)
-					label1=Label(root2,text="SUCCESSFULL!!!",bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri (Body)',12,'italic')).place(x=150,y=170)
+					label1=Label(root2,text="Giải mã thành công",bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri (Body)',12,'italic')).place(x=150,y=170)
 		except :
 			frame=Frame(root2,height=25,width=500,bg='#FFFFFF')
 			frame.place(x=150,y=170)
-			label1=Label(root2,text="ERROR!!!",bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri (Body)',12,'italic')).place(x=150,y=170)
+			label1=Label(root2,text="Giải mã thất bại",bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri (Body)',12,'italic')).place(x=150,y=170)
 	def gotodo2():
 		link.set('')	
 		link2.set('')

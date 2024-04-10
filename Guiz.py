@@ -1,9 +1,10 @@
 try:
 	from tkinter import *
 	from tkinter import messagebox
-
+    
 	import random
 	from tkinter import ttk
+ 
 	import todo as test
 	import enc
 	import dec
@@ -130,11 +131,16 @@ try:
 		button_ok2.config(activebackground='#f49b00')
 		button_ok2.config(activeforeground='#ffffff')'''
 
+	def save_keys_to_file(public_key, private_key):
+		with open('public_key.pem', 'w') as pfile:
+			pfile.write(str(public_key))
+		with open('private_key.pem', 'w') as prfile:
+			prfile.write(str(private_key))
 
 	def gotodo(e,p,q,pn,n):
 		fr=Frame(root,width=550,height=490,bg='#FFFFFF')
 		fr.place(x=0,y=260)
-
+		
 		z,ht=test.ecu(pn,e)
 
 		button_ok2=Button(root,text="Hiện Bảng",command=lambda:test.hienthi(*ht),width=10,height=1,bg='#f49b00',fg='#ffffff',bd=0,font=('Calibri (Body)',11,'bold italic'),compound='bottom')
@@ -162,7 +168,7 @@ try:
 		button_ok2.place(x=200,y=610)
 		button_ok2.config(activebackground='#f49b00')
 		button_ok2.config(activeforeground='#ffffff')
-
+		
 	key=StringVar()
 	key2=StringVar()
 

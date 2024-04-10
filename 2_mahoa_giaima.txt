@@ -1,0 +1,3 @@
+Dựa trên mã nguồn bạn đã cung cấp, đây là một chương trình Python sử dụng thư viện PyQt5 để tạo ra một ứng dụng GUI.
+ Chương trình này cũng thực hiện thuật toán RSA, một thuật toán mã hóa khóa công khai phổ biến.
+ Dưới đây là một số chức năng chính của chương trình
