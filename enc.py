@@ -35,7 +35,7 @@ def mains(pu=0,pr=0):
 		frame.place(x=150,y=170)
 
 	root2=Toplevel()
-	root2.title("Mã Hóa RSA - Vũ Đức Mạnh")
+	root2.title("Mã Hóa RSA ")
 	root2.geometry('750x350+650+200')
 	root2.configure(bg='#FFFFFF')
 	root2.resizable(0,0)

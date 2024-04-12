@@ -9,7 +9,7 @@ try:
 	import enc
 	import dec
 	root=Tk()
-	root.title("RSA - Vũ Đức Mạnh")
+	root.title("RSA ")
 	root.geometry('550x700+20+10')
 	root.configure(bg='#FFFFFF')
 	root.resizable(0,0)
@@ -143,19 +143,19 @@ try:
 		
 		z,ht=test.ecu(pn,e)
 
-		button_ok2=Button(root,text="Hiện Bảng",command=lambda:test.hienthi(*ht),width=10,height=1,bg='#f49b00',fg='#ffffff',bd=0,font=('Calibri (Body)',11,'bold italic'),compound='bottom')
+		'''button_ok2=Button(root,text="Hiện Bảng",command=lambda:test.hienthi(*ht),width=10,height=1,bg='#f49b00',fg='#ffffff',bd=0,font=('Calibri (Body)',11,'bold italic'),compound='bottom')
 		button_ok2.place(x=390,y=260)
 		button_ok2.config(activebackground='#f49b00')
-		button_ok2.config(activeforeground='#ffffff')
+		button_ok2.config(activeforeground='#ffffff')'''
 		
 		d=test.check(z[2],pn)
 
 		label01=Label(root,text='n = (p*q) = {}'.format(n),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=50,y=260)
 		label02=Label(root,text='φ(n) = (p-1)*(q-1) = {}'.format(pn),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=50,y=310)
 		label01=Label(root,text='e = {}'.format(e),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=50,y=360)
-		label1=Label(root,text='T = {}'.format(z[2]),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=50,y=410)
-		label2=Label(root,text='S = {}'.format(z[1]),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=150,y=410)
-		label3=Label(root,text='{}{}'.format('T1>0 d = t1 = 'if z[2]>0 else'T1<0 d = Pn+T1 = ',d),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=50,y=460)
+		label1=Label(root,text='d = {}'.format(z[2]),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=50,y=410)
+		'''label2=Label(root,text='S = {}'.format(z[1]),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=150,y=410)
+		label3=Label(root,text='{}{}'.format('T1>0 d = t1 = 'if z[2]>0 else'T1<0 d = Pn+T1 = ',d),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=50,y=460)'''
 		label4=Label(root,text='Public key = (n,e) = ({},{})'.format(n,e),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=50,y=510)
 		label4=Label(root,text='Private key = (n,d) = ({},{})'.format(n,d),bg='#FFFFFF',bd=1,justify=CENTER,font=('Calibri')).place(x=50,y=560)
 
